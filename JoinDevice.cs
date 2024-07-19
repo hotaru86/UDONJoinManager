@@ -117,4 +117,10 @@ public class JoinDevice : UdonSharpBehaviour
         isJoin = false;
         RequestSerialization();
     }
+
+    //Owner変更したことをJoinManagerに通知
+    public override void OnOwnershipTransferred(VRCPlayerApi player)
+    {
+        joinManager.DisplayDebugText();
+    }
 }
