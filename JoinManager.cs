@@ -176,7 +176,7 @@ public class JoinManager : UdonSharpBehaviour
 
     //デバッグ用テキスト表示
     [SerializeField] Text debugText;
-    void DisplayDebugText()
+    public void DisplayDebugText()
     {
         if (debugText == null) return;
         string str = "";
